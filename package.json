@@ -1,0 +1,24 @@
+{
+  "name": "pelican-zapper",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "homepage": "https://github.com/lexh/pelican-zapper",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lexh/pelican-zapper.git"
+  },
+  "description": "Locally collapse Hacker News comments mentioning pelicans.",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "check": "node --check extension/content.js && node --check tests/content.test.js && node --check tests/fixtures/hn-collapse-harness.js",
+    "package:safari": "sh scripts/package-safari.sh",
+    "package:webext": "sh scripts/package-webext.sh"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "jsdom": "^26.1.0"
+  }
+}

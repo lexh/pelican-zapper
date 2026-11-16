@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <title>Pelican Zapper icon</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1e2a5a"/>
+      <stop offset="1" stop-color="#4c1d95"/>
+    </linearGradient>
+    <radialGradient id="zapperGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#c084fc" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#a855f7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="zapperFace" cx="0.45" cy="0.45" r="0.65">
+      <stop offset="0" stop-color="#9333ea"/>
+      <stop offset="1" stop-color="#4c1d95"/>
+    </radialGradient>
+    <linearGradient id="beakPouch" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffb703"/>
+      <stop offset="1" stop-color="#fb8500"/>
+    </linearGradient>
+    <clipPath id="iconClip">
+      <rect x="0" y="0" width="512" height="512" rx="96"/>
+    </clipPath>
+    <clipPath id="meshClip">
+      <ellipse cx="404" cy="256" rx="142" ry="182"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#iconClip)">
+    <rect width="512" height="512" fill="url(#bg)"/>
+
+    <!-- electric glow and zapper head on right -->
+    <ellipse cx="404" cy="256" rx="200" ry="236" fill="url(#zapperGlow)"/>
+    <ellipse cx="404" cy="256" rx="168" ry="208" fill="#2f3640" stroke="#1e272e" stroke-width="10"/>
+    <ellipse cx="404" cy="256" rx="142" ry="182" fill="url(#zapperFace)" stroke="#c4b5fd" stroke-width="6"/>
+
+    <!-- high-contrast grid lines -->
+    <g clip-path="url(#meshClip)" stroke="#ddd6fe" stroke-width="6" opacity="0.85">
+      <line x1="296" y1="60" x2="296" y2="452"/>
+      <line x1="344" y1="60" x2="344" y2="452"/>
+      <line x1="392" y1="60" x2="392" y2="452"/>
+      <line x1="440" y1="60" x2="440" y2="452"/>
+      <line x1="488" y1="60" x2="488" y2="452"/>
+      <line x1="250" y1="128" x2="520" y2="128"/>
+      <line x1="250" y1="176" x2="520" y2="176"/>
+      <line x1="250" y1="224" x2="520" y2="224"/>
+      <line x1="250" y1="272" x2="520" y2="272"/>
+      <line x1="250" y1="320" x2="520" y2="320"/>
+      <line x1="250" y1="368" x2="520" y2="368"/>
+    </g>
+
+    <!-- pelican neck and head entering from left -->
+    <path d="M -20 420 Q 24 300 96 236 L 166 286 Q 108 352 84 468 Z"
+          fill="#ffffff" stroke="#dcdde1" stroke-width="6"/>
+    <!-- crest tuft -->
+    <path d="M 96 154 Q 82 126 64 118 M 118 150 Q 112 118 98 106"
+          stroke="#ffffff" stroke-width="10" stroke-linecap="round" fill="none"/>
+    <!-- head -->
+    <circle cx="128" cy="216" r="68" fill="#ffffff" stroke="#dcdde1" stroke-width="6"/>
+
+    <!-- oversized pelican pouch and upper beak colliding with zapper -->
+    <path d="M 166 226 C 174 358 246 404 316 362 C 338 348 354 330 364 316 L 170 214 Z"
+          fill="url(#beakPouch)" stroke="#d97706" stroke-width="8" stroke-linejoin="round"/>
+    <path d="M 168 182 Q 272 222 368 304 L 358 320 Q 262 252 164 218 Z"
+          fill="#fb8500" stroke="#d97706" stroke-width="8" stroke-linejoin="round"/>
+
+    <!-- panicked eye -->
+    <circle cx="126" cy="198" r="24" fill="#ffffff" stroke="#1e272e" stroke-width="7"/>
+    <circle cx="134" cy="200" r="10" fill="#1e272e"/>
+    <path d="M 98 164 L 150 176" stroke="#1e272e" stroke-width="9" stroke-linecap="round"/>
+
+    <!-- electric zap starburst at point of impact -->
+    <polygon points="356,204 378,262 438,244 396,292 448,326 384,324 392,388 354,336 312,384 326,322 266,326 318,290 274,246 334,262"
+             fill="#fff200" stroke="#ff9f1a" stroke-width="10" stroke-linejoin="round"/>
+    <g stroke="#fff200" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="356,294 312,188 338,192 304,116"/>
+      <polyline points="356,294 318,396 344,392 312,462"/>
+    </g>
+  </g>
+</svg>
